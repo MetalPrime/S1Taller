@@ -11,8 +11,10 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/signin_color_button"
         android:text="Don't have account? Sign In"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -34,11 +36,19 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/nput_color"
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -46,11 +56,15 @@
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/nput_color"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPersonName"
+            android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,12 +88,25 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/principal_button"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="463dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="32"
+            android:layout_height="32"
+            app:srcCompat="@drawable/facebook_icon"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="525dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
